@@ -1,0 +1,77 @@
+body {
+  background: rgb(248, 230, 230);
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+#left {
+  background-color: rgb(245, 216, 216);
+  width: 30%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
+  border-right: 3px solid rgb(212, 147, 147);
+}
+h1 {
+  color: darkred;
+  font-size: 50px;
+}
+.profil-photo img {
+  float: left;
+  width: 90%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.Contact {
+  margin: 20px;
+}
+.Contact h2 {
+  color: darkred;
+  border-bottom: 3px solid rgb(212, 147, 147);
+}
+.Contact i {
+  width: 20px;
+  float: left;
+  color: black;
+}
+.Contact h3 {
+  color: rgb(8, 8, 8);
+}
+.Contact h3 a {
+  color: rgb(8, 8, 8);
+}
+.Learning-strategies {
+  margin: 20px;
+  color: darkred;
+}
+.Learning-strategies h2 {
+  border-bottom: 3px solid rgb(212, 147, 147);
+}
+.Learning-strategies li a {
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+}
+.Hack-Your-Future {
+  margin: 20px;
+  color: darkred;
+}
+.Hack-Your-Future h2 {
+  border-bottom: 3px solid rgb(212, 147, 147);
+}
+.Hack-Your-Future li a {
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+}
+#Right {
+  width: 65%;
+  height: 100%;
+  position: relative;
+  float: right;
+  border-collapse: collapse;
+  margin-top: 80px;
+}
+.headings {
+  color: darkred;
+  border-bottom: 3px solid rgb(212, 147, 147);
+  padding-top: 50px;
+}
