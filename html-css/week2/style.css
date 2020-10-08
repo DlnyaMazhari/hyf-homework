@@ -44,12 +44,26 @@
   padding-top: 30px;
   text-align: justify;
 }
-.content-upper-left,
-.content-lower-left {
+.content-upper-left {
   padding: 0px 120px;
 }
-.content-upper-right,
+.content-upper-right {
+  padding-right: 190px;
+}
+.logos img {
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+}
+.content-lower-left {
+  width: 500px;
+  height: 500px;
+
+  padding-left: 120px;
+}
 .content-lower-right {
+  width: 600px;
+  height: 500px;
   padding-right: 190px;
 }
 .contents-down {
@@ -58,8 +72,9 @@
   height: 500px;
   padding-top: 30px;
   text-align: justify;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
+
 footer {
   background-color: rgb(106, 40, 150);
   margin-top: 40px;
