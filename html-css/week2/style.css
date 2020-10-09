@@ -117,38 +117,18 @@ hr {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .header-1 {
-    margin-left: 5em;
+@media all and (max-width: 680px) {
+  .header {
+    margin: 1em;
   }
-  .header-2 a {
+  .main {
+    margin: 0.5em;
+    font-size: smaller;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 1em;
-    width: 30%;
-    margin-left: 5em;
   }
-
-  .content-upper-left,
-  .content-lower-left {
-    width: 32%;
-    padding: 2em;
-  }
-  .content-upper-right,
-  .content-lower-right {
-    width: 45%;
-    padding: 2em;
-  }
-
-  .icons img {
-    width: 25%;
-  }
-  .column1,
-  .column2,
-  .column3,
-  .column4 {
-    text-align: start;
-    justify-items: center;
+  .columns {
+    display: flex;
+    flex-direction: row;
   }
 }
