@@ -35,13 +35,12 @@
 }
 .image img {
   width: 100%;
-
   padding-top: 20px;
 }
 .contents-up {
   display: flex;
   width: auto;
-  height: 500px;
+  /*height: 500px;*/
   padding-top: 30px;
   text-align: justify;
 }
