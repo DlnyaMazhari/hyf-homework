@@ -39,17 +39,18 @@
 }
 .contents-up {
   display: flex;
-  width: auto;
+  justify-content: space-evenly;
+
   padding-top: 30px;
 }
 .contents-up p {
   text-align: justify;
 }
 .content-upper-left {
-  padding: 0px 120px;
+  padding-left: 120px;
 }
 .content-upper-right {
-  padding-right: 190px;
+  padding-left: 190px;
 }
 
 .contents-down {
@@ -60,12 +61,12 @@
   padding-left: 120px;
 }
 .content-lower-right {
-  padding-right: 290px;
-  width: 600px;
+  margin-left: 0px;
+  width: 780px;
 }
 .logos img {
-  width: 90px;
-  height: 90px;
+  width: 130px;
+  height: 130px;
   margin: 15px;
 }
 
