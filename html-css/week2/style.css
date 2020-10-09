@@ -144,6 +144,11 @@ hr {
     flex-direction: column;
     margin: 1em;
   }
+  .main {
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+  }
   .contents-up {
     display: flex;
     flex-direction: column;
@@ -182,12 +187,6 @@ hr {
     flex-wrap: wrap;
   }
 
-  .main {
-    margin: 0.5em;
-    font-size: smaller;
-    display: flex;
-    flex-direction: column;
-  }
   .columns {
     display: flex;
     flex-direction: column;
