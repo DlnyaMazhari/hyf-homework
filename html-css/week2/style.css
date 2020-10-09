@@ -118,6 +118,10 @@ hr {
 }
 
 @media all and (max-width: 680px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
   .header {
     margin: 1em;
   }
