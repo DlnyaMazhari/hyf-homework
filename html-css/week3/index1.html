@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yourcustomtailor form</title>
+  </head>
+  <body>
+    <form action="index2.html" method="POST">
+      <fieldset>
+        <header>
+          <h5 class="logo">Logo</h5>
+          <h5 class="Nav">Navigation</h5>
+        </header>
+        <h1 class="head-info">Sign up to yourcustomtailor.com</h1>
+        <div class="parags-1">
+          <p>
+            We can't wait to help you improve your life-style and gain the
+            attention from people around you!
+          </p>
+          <p>
+            Sign up below to save up to 70% on apparel, hand-bags and
+            cosmetics.Our agents are busy picking the best offers that match
+            your preferences and style.Every week we will send you a hand-picked
+            selection-we just need to know a few details about you first...
+          </p>
+        </div>
+        <h1 class="head-info">Step 1/4- tell us who you are?</h1>
+        <div class="progress">
+          <h2>Progress</h2>
+          <label for="file"></label>
+          <progress id="file" value="5" max="100">5%</progress>
+        </div>
+        <div class="parags-2">
+          <p>
+            Nice to meet you.Let's spend a minute to get to know each other?
+            Please enter the following:
+          </p>
+        </div>
+        <div class="titles">
+          <label for="fname">First name* </label
+          ><input
+            type="text"
+            name="fname"
+            id="fname"
+            required
+            class="boxsize"
+          />
+          <label for="lname">Last name* </label>
+          <input type="text" name="lname" id="lname" required class="boxsize" />
+        </div>
+        <div class="titles">
+          <label for="country">Country*</label>
+          <select id="country" name="country" required class="boxsize">
+            <option value="Denmark">Denmark</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Finland">Finland</option>
+            <option value="Norway">Norway</option>
+            <option value="United Kingdom">United Kingdom</option>
+          </select>
+        </div>
+        <div class="titles">
+          <label for="streetaddress">Street address* </label
+          ><input
+            type="text"
+            name="streetaddress"
+            id="streetaddress"
+            required
+            class="boxsize"
+          />
+          <label for="postcode">Post code* </label>
+          <input
+            type="text"
+            pattern="\d{4}"
+            maxlength="4"
+            title="Please enter only digits"
+            required
+            class="boxsize"
+          />
+        </div>
+        <div class="description">
+          <label for="profiledescription">Profile description </label>
+          <textarea
+            id="profiledescription"
+            name="profiledescription"
+            maxlength="500"
+            class="descriptionbox"
+          ></textarea>
+        </div>
+        <div class="shipping-address">
+          <p>
+            Use the same address for billing and shipping?Uncheck below to fill
+            out a separate shipping address.
+          </p>
+          <label for="Shipping address">Shipping address</label>
+          <input
+            type="checkbox"
+            id="Shipping address"
+            checked="checked"
+            class="ch-box"
+          />
+        </div>
+        <div class="next-step">
+          <button>Next Step</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

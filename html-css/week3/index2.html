@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yourcustomtailor form</title>
+  </head>
+  <body>
+    <form action="index3.html" method="POST">
+      <fieldset>
+        <header>
+          <h5 class="logo">Logo</h5>
+          <h5 class="Nav">Navigation</h5>
+        </header>
+        <h1 class="head-info">Sign up to yourcustomtailor.com</h1>
+        <h1 class="head-info">Step 2/4- How can we reach you?</h1>
+        <div class="progress">
+          <h2>Progress</h2>
+          <label for="file"></label>
+          <progress id="file" value="30" max="100">30%</progress>
+        </div>
+        <div class="parags-2">
+          <p>
+            We will probably need to stay in touch somehow.Let us know how we
+            can reach you?
+          </p>
+        </div>
+        <div class="titles">
+          <label for="email">Email* </label
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+            class="boxsize"
+          />
+          <label for="phone">Phone </label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+            class="boxsize"
+          />
+        </div>
+        <div class="titles">
+          <label for="pwd">Password* </label
+          ><input
+            type="password"
+            name="pwd"
+            id="pwd"
+            pattern="(?=.*[a-z])(?=.*[A-Z]).{10,}"
+            title="Must contain one uppercase and lowercase letter, and at least 10 or more characters"
+            required
+            class="boxsize"
+          />
+        </div>
+        <div class="titles">
+          <label for="pwd">Re-enter Password* </label
+          ><input
+            type="password"
+            name="pwd"
+            id="pwd"
+            pattern="(?=.*[a-z])(?=.*[A-Z]).{10,}"
+            title="Must contain one uppercase and lowercase letter, and at least 10 or more characters"
+            required
+            class="boxsize"
+          />
+        </div>
+        <div class="parags-2">
+          <p>I want to sign up for the newsletter</p>
+        </div>
+        <div class="titles">
+          <label for="weekly">Weekly news</label
+          ><input
+            type="radio"
+            name="weekly"
+            value="weekly"
+            required
+            class="newsletter"
+          />
+          <label for="monthly">Monthly news</label
+          ><input
+            type="radio"
+            name="monthly"
+            value="monthly"
+            required
+            class="newsletter"
+          />
+          <label for="dontsend">Don't send me news</label
+          ><input
+            type="radio"
+            name="dontsend"
+            value="dontsend"
+            required
+            class="newsletter"
+          />
+        </div>
+        <div class="next-step2">
+          <button>Next Step</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

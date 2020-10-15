@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yourcustomtailor form</title>
+  </head>
+  <body>
+    <form action="index4.html" method="POST">
+      <fieldset>
+        <header>
+          <h5 class="logo">Logo</h5>
+          <h5 class="Nav">Navigation</h5>
+        </header>
+        <h1 class="head-info">Sign up to yourcustomtailor.com</h1>
+        <h1 class="head-info">
+          Step 4/4- Time to learn about your preferences?
+        </h1>
+        <div class="progress">
+          <h2>Progress</h2>
+          <label for="file"></label>
+          <progress id="file" value="90" max="100">90%</progress>
+        </div>
+        <div class="parags-2">
+          <p>Please fill in youer payment data</p>
+        </div>
+        <div class="titles">
+          <label for="cardname">Name on card </label
+          ><input
+            type="text"
+            name="cardname"
+            id="cardname"
+            required
+            class="boxsize"
+          /><br />
+        </div>
+        <div class="titles">
+          <label for="cardtype">Card type</label>
+          <select id="cardtype" name="cardtype" required class="boxsize">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+        <div class="titles">
+          <label for="cardnr">Credit card number </label>
+          <input
+            type="number"
+            name="cardnr"
+            id="cardnr"
+            required
+            class="boxsize"
+          />
+          <label for="fname">First name </label
+          ><input
+            type="text"
+            name="fname"
+            id="fname"
+            required
+            class="boxsize"
+          /><br />
+        </div>
+        <div class="titles">
+          <label for="expmonth">Expiry month </label
+          ><input
+            type="text"
+            name="expmonth"
+            id="expmonth"
+            required
+            class="boxsize2"
+          />
+          <label for="expyr">Expiry year </label
+          ><input
+            type="text"
+            name="expyr"
+            id="expyr"
+            required
+            class="boxsize2"
+          /><br />
+        </div>
+        <div class="titles">
+          <label for="ccv">CCV </label
+          ><input type="text" name="ccv" id="ccv" required class="boxsize2" />
+        </div>
+        <div class="next-step">
+          <button>Next Step</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
