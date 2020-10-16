@@ -99,75 +99,75 @@
           </p>
         </div>
         <div class="shipping-address">
-          <label for="toggle">Shipping address</label>
-          <input
-            id="toggle"
-            type="checkbox"
-            name="shippingaddress"
-            value="shippingaddress"
-            checked
-            class="ch-box"
-          />
-        </div>
-        <div class="hiddenpart">
-          <div class="titles">
-            <h3>Shipping address</h3>
-            <label for="fname">First name* </label
-            ><input
-              type="text"
-              name="fname"
-              id="fname"
-              required
-              class="boxsize"
-            />
-            <label for="lname">Last name* </label>
-            <input
-              type="text"
-              name="lname"
-              id="lname"
-              required
-              class="boxsize"
-            />
-          </div>
-          <div class="titles">
-            <label for="country">Country*</label>
-            <select id="country" name="country" required class="boxsize">
-              <option value="" style="display: none">&nbsp;</option>
-              <option value="Denmark">Denmark</option>
-              <option value="Sweden">Sweden</option>
-              <option value="Finland">Finland</option>
-              <option value="Norway">Norway</option>
-              <option value="United Kingdom">United Kingdom</option>
-            </select>
-          </div>
-          <div class="titles">
-            <label for="streetaddress">Street address* </label
-            ><input
-              type="text"
-              name="streetaddress"
-              id="streetaddress"
-              required
-              class="boxsize"
-            />
-            <label for="postcode">Post code* </label>
-            <input type="text" pattern="[0-9]{4}" required class="boxsize" />
-          </div>
-          <div class="description">
-            <div class="descrp-parag">
-              <label for="profiledescription">Profile description </label>
-              <p>
-                <i>
-                  Please provide a short description of yourself to be displayed
-                  on our social community pages
-                </i>
-              </p>
+          <label for="toggle">
+            <strong>Shipping addresss</strong>
+          </label>
+
+          <input type="checkbox" id="toggle" name="toggle" checked required />
+
+          <div class="hiddenpart">
+            <div class="titles">
+              <h3>Shipping address</h3>
+              <label for="fname"
+                >First name* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+              ><input
+                type="text"
+                name="fname"
+                id="fname"
+                required
+                class="boxsize"
+              />
+              <label for="lname">&nbsp;&nbsp;Last name* </label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                required
+                class="boxsize"
+              />
             </div>
-            <textarea
-              id="profiledescription"
-              name="profiledescription"
-              maxlength="500"
-              class="descriptionbox"
-            ></textarea>
+            <div class="titles">
+              <label for="country"
+                >Country*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+              <select id="country" name="country" required class="boxsize">
+                <option value="" style="display: none">&nbsp;</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Finland">Finland</option>
+                <option value="Norway">Norway</option>
+                <option value="United Kingdom">United Kingdom</option>
+              </select>
+            </div>
+            <div class="titles">
+              <label for="streetaddress">Street address* </label
+              ><input
+                type="text"
+                name="streetaddress"
+                id="streetaddress"
+                required
+                class="boxsize"
+              />
+              <label for="postcode">&nbsp;&nbsp;&nbsp;Post code* </label>
+              <input type="text" pattern="[0-9]{4}" required class="boxsize" />
+            </div>
+            <div class="description">
+              <div class="descrp-parag">
+                <label for="profiledescription">Profile description </label>
+                <p>
+                  <i>
+                    Please provide a short description of yourself to be
+                    displayed on our social community pages
+                  </i>
+                </p>
+              </div>
+              <textarea
+                id="profiledescription"
+                name="profiledescription"
+                maxlength="500"
+                class="descriptionbox"
+              ></textarea>
+            </div>
           </div>
         </div>
         <div class="next-step">

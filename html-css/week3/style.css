@@ -1,4 +1,4 @@
-body {
+/* body {
   height: 100vh;
   margin: 40px;
 }
@@ -78,19 +78,18 @@ progress[value] {
 .shipping-address label {
   vertical-align: 0.8em;
 }
-.ch-box {
+.shipping-address input {
   content: normal;
   width: 80px;
   height: 50px;
 }
-
-/* .hiddenpart {
+.hiddenpart {
   display: none;
-} */
-/* #toggle:not(:checked) ~ .hiddenpart {
-  margin-top: 80px;
+}
+#toggle:not(:checked) ~ .hiddenpart {
   display: block;
-} */
+}
+
 .next-step {
   text-align: right;
   padding: 10px;
@@ -122,6 +121,155 @@ progress[value] {
   height: 40px;
 }
 
+.image img {
+  width: 250px;
+  height: 250px;
+}
+.image label {
+  font-size: xx-large;
+}
+.image input {
+  width: 40px;
+  height: 40px;
+}
+.img-grp1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.img-grp2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.boxsize2 {
+  width: 60px;
+  height: 40px;
+} */
+body {
+  height: 100vh;
+  margin: 40px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+.logo {
+  font-weight: lighter;
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 50px;
+}
+.Nav {
+  font-weight: lighter;
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 40px;
+  width: 500px;
+  text-align: center;
+}
+.head-info {
+  font-size: 4em;
+}
+.parags-1 {
+  font-size: 1.8em;
+  width: 70%;
+}
+progress[value] {
+  width: 100%;
+  height: 70px;
+}
+.parags-2 {
+  font-size: 1.8em;
+  width: 100%;
+}
+.titles {
+  font-size: x-large;
+  font-weight: bolder;
+  padding-left: 150px;
+  padding-top: 30px;
+}
+.boxsize {
+  width: 250px;
+  height: 40px;
+}
+.titles label {
+  padding-right: 30px;
+}
+.descrp-parag {
+  width: 200px;
+  font-weight: normal;
+  vertical-align: 5em;
+}
+.descrp-parag label {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.description {
+  display: flex;
+  padding-left: 150px;
+  padding-top: 100px;
+}
+.descriptionbox {
+  width: 70%;
+  height: 150px;
+}
+.shipping-address {
+  font-size: x-large;
+  font-weight: bolder;
+  padding-left: 150px;
+  padding-top: 30px;
+}
+.shipping-address label {
+  vertical-align: 0.1em;
+} /*Actually this part is affecting the size of the input fields in hidden address
+  /*.shipping-address input {
+    content: normal;
+    width: 80px;
+    height: 50px;
+  }*/
+/*Use the below code instead*/
+#toggle {
+  content: normal;
+  width: 80px;
+  height: 50px;
+}
+.hiddenpart {
+  display: none;
+}
+#toggle:not(:checked) ~ .hiddenpart {
+  display: block;
+}
+.next-step {
+  text-align: right;
+  padding: 10px;
+}
+.next-step [value],
+.next-step2 [value] {
+  font-size: 2em;
+  width: 300px;
+  height: 100px;
+  background-color: lightgray;
+}
+.newsletter {
+  width: 150px;
+  height: 40px;
+}
+.next-step2 {
+  text-align: right;
+  padding: 10px;
+  padding-top: 200px;
+}
+.kind-of-items {
+  font-size: x-large;
+  font-weight: bold;
+  padding-left: 200px;
+  font-size: xx-large;
+}
+.item-box {
+  width: 40px;
+  height: 40px;
+}
 .image img {
   width: 250px;
   height: 250px;
