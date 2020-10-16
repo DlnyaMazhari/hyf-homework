@@ -7,7 +7,7 @@
     <title>Yourcustomtailor form</title>
   </head>
   <body>
-    <form action="index4.html" method="POST">
+    <form action="index4.html" method="GET">
       <fieldset>
         <header>
           <h5 class="logo">Logo</h5>
@@ -26,81 +26,128 @@
           <p>What kind of items are you interested in offers on?</p>
         </div>
         <div class="kind-of-items">
+          <label for="apparal">
+            Apparal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
           <input
             type="checkbox"
             id="apparal"
             name="apparal"
             value="apparal"
             checked
+            class="item-box"
           />
-          <label for="apparal"> Apparal</label>
+          <label for="jewelry">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jewelry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </label>
           <input
             type="checkbox"
             id="jewelry"
             name="jewelry"
             value="jewelry"
             checked
-          />
-          <label for="jewelry"> Jewelry</label><br />
+            class="item-box"
+          /><br />
+          <label for="accessories">Accessories&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <input
             type="checkbox"
             id="accessories"
             name="accessories"
             value="accessories"
             checked
+            class="item-box"
           />
-          <label for="accessories"> Accessories</label>
+          <label for="shoes">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
           <input
             type="checkbox"
             id="shoes"
             name="shoes"
             value="shoes"
             checked
-          />
-          <label for="shoes"> Shoes</label><br />
+            class="item-box"
+          /><br />
+          <label for="handbags">
+            Handbags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
           <input
             type="checkbox"
             id="handbags"
             name="handbags"
             value="handbags"
+            class="item-box"
           />
-          <label for="handbags"> Handbags</label>
         </div>
         <div class="parags-2">
           <p>Choose the images that best resemble your style</p>
         </div>
         <div class="images">
           <div class="img-grp1">
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input type="checkbox" id="Select" name="select" value="select" />
+            </div>
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input
+                type="checkbox"
+                id="Select"
+                name="select"
+                value="select"
+                checked
+              />
+            </div>
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input type="checkbox" id="Select" name="select" value="select" />
+            </div>
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input
+                type="checkbox"
+                id="Select"
+                name="select"
+                value="select"
+                checked
+              />
+            </div>
           </div>
           <div class="img-grp2">
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
-            <img src="image.PNG" alt="image" class="image" />
-            <label for="select"> Select</label><br />
-            <input type="checkbox" id="Select" name="select" value="select" />
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input type="checkbox" id="Select" name="select" value="select" />
+            </div>
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input type="checkbox" id="Select" name="select" value="select" />
+            </div>
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input
+                type="checkbox"
+                id="Select"
+                name="select"
+                value="select"
+                checked
+              />
+            </div>
+            <div class="image">
+              <img src="image.PNG" alt="image" /><br />
+              <label for="select"> Select</label>
+              <input type="checkbox" id="Select" name="select" value="select" />
+            </div>
           </div>
         </div>
         <div class="next-step">
-          <button>Next Step</button>
+          <input type="submit" value="Next step" />
         </div>
       </fieldset>
     </form>

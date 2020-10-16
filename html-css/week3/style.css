@@ -50,27 +50,25 @@ progress[value] {
 .titles label {
   padding-right: 30px;
 }
+.descrp-parag {
+  width: 200px;
+  font-weight: normal;
+  vertical-align: 5em;
+}
+.descrp-parag label {
+  font-size: 1.5em;
+  font-weight: bold;
+}
 .description {
-  font-size: x-large;
-  font-weight: bolder;
+  display: flex;
   padding-left: 150px;
-  padding-top: 30px;
   padding-top: 100px;
 }
 .descriptionbox {
   width: 70%;
   height: 150px;
 }
-.description label {
-  padding-right: 30px;
-  vertical-align: 5em;
-}
-.shipping-address p {
-  font-size: 1.2em;
-  width: 100%;
-  padding-left: 0px;
-  font-weight: normal;
-}
+
 .shipping-address {
   font-size: x-large;
   font-weight: bolder;
@@ -86,16 +84,19 @@ progress[value] {
   height: 50px;
 }
 
-#checkboxshippingaddress:not(:checked) ~ .shipping-address {
-  margin-top: 80px;
+/* .hiddenpart {
   display: none;
-}
+} */
+/* #toggle:not(:checked) ~ .hiddenpart {
+  margin-top: 80px;
+  display: block;
+} */
 .next-step {
   text-align: right;
   padding: 10px;
 }
-.next-step button,
-.next-step2 button {
+.next-step [value],
+.next-step2 [value] {
   font-size: 2em;
   width: 300px;
   height: 100px;
@@ -114,11 +115,23 @@ progress[value] {
   font-size: x-large;
   font-weight: bold;
   padding-left: 200px;
+  font-size: xx-large;
 }
-.image {
-  padding-left: 30px;
-  width: 230px;
-  height: 230px;
+.item-box {
+  width: 40px;
+  height: 40px;
+}
+
+.image img {
+  width: 250px;
+  height: 250px;
+}
+.image label {
+  font-size: xx-large;
+}
+.image input {
+  width: 40px;
+  height: 40px;
 }
 .img-grp1 {
   display: flex;
@@ -127,6 +140,7 @@ progress[value] {
 .img-grp2 {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 50px;
 }
 .boxsize2 {
   width: 60px;

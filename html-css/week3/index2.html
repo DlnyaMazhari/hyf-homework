@@ -7,7 +7,7 @@
     <title>Yourcustomtailor form</title>
   </head>
   <body>
-    <form action="index3.html" method="POST">
+    <form action="index3.html" method="GET">
       <fieldset>
         <header>
           <h5 class="logo">Logo</h5>
@@ -27,7 +27,7 @@
           </p>
         </div>
         <div class="titles">
-          <label for="email">Email* </label
+          <label for="email">Email* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
           ><input
             type="email"
             name="email"
@@ -36,7 +36,7 @@
             required
             class="boxsize"
           />
-          <label for="phone">Phone </label>
+          <label for="phone">&nbsp;&nbsp;&nbsp;Phone </label>
           <input
             type="tel"
             name="phone"
@@ -76,15 +76,16 @@
           <label for="weekly">Weekly news</label
           ><input
             type="radio"
-            name="weekly"
+            name="news"
             value="weekly"
             required
+            checked
             class="newsletter"
           />
           <label for="monthly">Monthly news</label
           ><input
             type="radio"
-            name="monthly"
+            name="news"
             value="monthly"
             required
             class="newsletter"
@@ -92,14 +93,14 @@
           <label for="dontsend">Don't send me news</label
           ><input
             type="radio"
-            name="dontsend"
+            name="news"
             value="dontsend"
             required
             class="newsletter"
           />
         </div>
         <div class="next-step2">
-          <button>Next Step</button>
+          <input type="submit" value="Next step" />
         </div>
       </fieldset>
     </form>
