@@ -103,7 +103,14 @@
             <strong>Shipping addresss</strong>
           </label>
 
-          <input type="checkbox" id="toggle" name="toggle" checked required />
+          <input
+            type="checkbox"
+            id="toggle"
+            name="toggle"
+            vallue=""
+            checked
+            required
+          />
 
           <div class="hiddenpart">
             <div class="titles">
@@ -114,6 +121,7 @@
                 type="text"
                 name="fname"
                 id="fname"
+                vallue=""
                 required
                 class="boxsize"
               />
@@ -122,6 +130,7 @@
                 type="text"
                 name="lname"
                 id="lname"
+                vallue=""
                 required
                 class="boxsize"
               />
@@ -132,11 +141,11 @@
               >
               <select id="country" name="country" required class="boxsize">
                 <option value="" style="display: none">&nbsp;</option>
-                <option value="Denmark">Denmark</option>
-                <option value="Sweden">Sweden</option>
-                <option value="Finland">Finland</option>
-                <option value="Norway">Norway</option>
-                <option value="United Kingdom">United Kingdom</option>
+                <option value="">Denmark</option>
+                <option value="">Sweden</option>
+                <option value="">Finland</option>
+                <option value="">Norway</option>
+                <option value="">United Kingdom</option>
               </select>
             </div>
             <div class="titles">
@@ -145,11 +154,18 @@
                 type="text"
                 name="streetaddress"
                 id="streetaddress"
+                vallue=""
                 required
                 class="boxsize"
               />
               <label for="postcode">&nbsp;&nbsp;&nbsp;Post code* </label>
-              <input type="text" pattern="[0-9]{4}" required class="boxsize" />
+              <input
+                type="text"
+                pattern="[0-9]{4}"
+                vallue=""
+                required
+                class="boxsize"
+              />
             </div>
             <div class="description">
               <div class="descrp-parag">
@@ -164,6 +180,7 @@
               <textarea
                 id="profiledescription"
                 name="profiledescription"
+                vallue=""
                 maxlength="500"
                 class="descriptionbox"
               ></textarea>
