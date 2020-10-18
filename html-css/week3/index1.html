@@ -102,15 +102,7 @@
           <label for="toggle">
             <strong>Shipping addresss</strong>
           </label>
-
-          <input
-            type="checkbox"
-            id="toggle"
-            name="toggle"
-            vallue=""
-            checked
-            required
-          />
+          <input type="checkbox" id="toggle" name="toggle" required checked />
 
           <div class="hiddenpart">
             <div class="titles">
@@ -121,7 +113,7 @@
                 type="text"
                 name="fname"
                 id="fname"
-                vallue=""
+                vallue=" "
                 required
                 class="boxsize"
               />
@@ -130,7 +122,7 @@
                 type="text"
                 name="lname"
                 id="lname"
-                vallue=""
+                vallue=" "
                 required
                 class="boxsize"
               />
@@ -140,12 +132,12 @@
                 >Country*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
               >
               <select id="country" name="country" required class="boxsize">
-                <option value="" style="display: none">&nbsp;</option>
-                <option value="">Denmark</option>
-                <option value="">Sweden</option>
-                <option value="">Finland</option>
-                <option value="">Norway</option>
-                <option value="">United Kingdom</option>
+                <option value=" ">--Please choose an option--</option>
+                <option value="Denmark">Denmark</option>
+                <option value=" Sweden">Sweden</option>
+                <option value="Finland ">Finland</option>
+                <option value=" Norway">Norway</option>
+                <option value=" United Kingdom">United Kingdom</option>
               </select>
             </div>
             <div class="titles">
@@ -154,15 +146,15 @@
                 type="text"
                 name="streetaddress"
                 id="streetaddress"
-                vallue=""
+                vallue=" "
                 required
                 class="boxsize"
               />
               <label for="postcode">&nbsp;&nbsp;&nbsp;Post code* </label>
               <input
-                type="text"
+                type="number"
                 pattern="[0-9]{4}"
-                vallue=""
+                vallue="1234"
                 required
                 class="boxsize"
               />
@@ -180,7 +172,6 @@
               <textarea
                 id="profiledescription"
                 name="profiledescription"
-                vallue=""
                 maxlength="500"
                 class="descriptionbox"
               ></textarea>
