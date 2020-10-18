@@ -1,0 +1,2 @@
+this is my first git homework.
+ here we add some sentences. 
