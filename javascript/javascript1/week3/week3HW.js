@@ -12,8 +12,15 @@ const names = [
   "Tala",
 ];
 const nameToRemove = "Ahmad";
-names.splice(3, 2);
-console.log(names);
+// names.splice(3, 2);
+// console.log(names);
+//I used above method to remove, but foor loop was suggested and it is used as below
+for (let i = 0; i < names.length; i++) {
+  if (names[i] === nameToRemove) {
+    names.splice(i, 1);
+  }
+  console.log(names[i]);
+}
 
 //When will we be there??
 const travelInformation = {
@@ -68,8 +75,8 @@ function seriesText() {
     const seriesCalcTime =
       seriesDurations[i].days *
       (seriesDurations[i].hours + seriesDurations[i].minutes / 60);
-    let timeSpent = ((seriesCalcTime * 100) / ageInHr) * 100;
-    let time = timeSpent.toFixed(2);
+    const timeSpent = ((seriesCalcTime * 100) / ageInHr) * 100;
+    const time = timeSpent.toFixed(2);
     console.log(seriesDurations[i].title + " took " + time + "% of my life");
     total += timeSpent;
   }
