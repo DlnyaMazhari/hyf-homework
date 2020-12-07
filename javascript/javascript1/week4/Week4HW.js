@@ -1,14 +1,23 @@
 "use strict";
 
-var arrNames = [];
-var todoArr = [];
+let arrNames = [];
+let todoArr = [];
 
 function getReplay(command) {
   const splitedCommand = command.split(" ");
   const userName = splitedCommand[splitedCommand.length - 1];
+
   if (command === "" || typeof command != "string") {
     return "Please say something valid!";
   }
+  /* //This way below is optional and suggested by mentor so its added as a note !
+
+  if (command.startsWith("Hello my name is")) {
+    // namess is same as username but as this way is optional and I wanted to 
+    //show it all and declared it once again or else it is not necessary to be declared again !
+    const namess = splitedCommand[splitedCommand.length - 1];
+    return `Nice to meet you ¤{name}`;
+  }*/
   if (command == `Hello my name is ${userName}`) {
     if (arrNames.includes(userName)) {
       return "We already got introduced!";
@@ -63,7 +72,7 @@ function getReplay(command) {
 }
 
 function arithOperator(command) {
-  var digit = command.match(/\d/g);
+  let digit = command.match(/\d/g);
   // console.log(digit[0], digit[1]);
   let digit1 = parseInt(digit[0]);
   let digit2 = parseInt(digit[1]);
