@@ -6,14 +6,12 @@ const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
 const shortestWord = getShortestWord(danishWords); // returns 'ø'
 function getShortestWord(words) {
   let newWord = danishWords[0];
-  for (let i = 0; i < danishWords.length; i++) {
+  for (let i = 1; i < danishWords.length; i++) {
     if (danishWords[i].length <= newWord.length) {
       newWord = danishWords[i];
-      danishWords[i] = danishWords[0];
-      danishWords[0] = newWord;
     }
   }
-  return danishWords[0];
+  return newWord;
 }
 document.getElementById("ShortestWord").innerHTML =
   "shortest word in array : " + shortestWord;
@@ -26,38 +24,34 @@ console.log(
 const danishString2 = "Blå grød med røde bær";
 let danishLetters = danishLettersCounter(danishString2);
 function danishLettersCounter(danString) {
-  const stringArray = danString.split(" ");
-  // console.log(stringArray);
+  const stringArray = danString.split("");
+  console.log(stringArray);
   let total = 0;
   let åCount = 0;
   let æCount = 0;
   let øCount = 0;
+
   for (let i = 0; i < stringArray.length; i++) {
-    if (stringArray[i].includes("å")) {
+    if (stringArray[i] === "å") {
       åCount++;
       total++;
-    }
-    if (stringArray[i].includes("ø")) {
+    } else if (stringArray[i] === "ø") {
       øCount++;
       total++;
-    }
-    if (stringArray[i].includes("æ")) {
+    } else if (stringArray[i] === "æ") {
       æCount++;
       total++;
     }
   }
 
-  return (
-    "Toral Danish letter: " +
-    total +
-    "<br> No of æ: " +
-    æCount +
-    "<br> No of å: " +
-    åCount +
-    "<br> No of ø: " +
-    øCount
-  );
+  return {
+    total: total,
+    å: åCount,
+    ø: øCount,
+    æ: æCount,
+  };
 }
+
 document.getElementById("danishLetters").innerHTML = danishLetters;
 console.log(danishLetters);
 
