@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "monserrat" sans-serif;
+  background-image: url("weather.jpg");
+  background-size: contain;
+  background-position: center;
+}
+#main {
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.8)
+  );
+  min-height: 100vh;
+  color: white;
+}
+#search-box {
+  padding: 80px 15px 60px;
+}
+#search-input {
+  width: 250px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px 0px 15px 0px;
+  border-bottom: solid 0.3em rgba(95, 23, 10, 0.3);
+  font-size: 15px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+#search-input:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#location {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#date {
+  font-size: 16px;
+}
+#temperature-degree {
+  font-size: 90px;
+  font-weight: 900;
+  margin: 25px 0px;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+}
+#celcius {
+  font-weight: 500;
+  font-size: 80px;
+}
+#sky-weather {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.3);
+}
+#max-min {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+}

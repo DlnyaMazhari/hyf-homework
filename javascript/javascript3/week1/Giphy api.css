@@ -1,0 +1,54 @@
+body {
+  background-color: rgba(245, 217, 217, 0.671);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.8)
+  );
+  min-height: 100vh;
+  text-align: center;
+}
+#giphy-header {
+  text-align: center;
+  font-size: 4em;
+  font-style: italic;
+  font-family: cursive;
+  color: rgb(145, 24, 119);
+  margin-top: 30px;
+}
+#inputs-button {
+  display: flex;
+  width: 600px;
+  height: auto;
+  text-align: center;
+  margin: 30px 550px 15px;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+#giphy-input {
+  width: 250px;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+#giphy-number {
+  width: 250px;
+  height: 40px;
+  border: solid 1px rgba(245, 217, 217, 0.671);
+  border: none;
+  outline: none;
+}
+#giphy-button {
+  width: 150px;
+  height: 40px;
+  border: solid 1px rgba(245, 217, 217, 0.671);
+  background-color: rgb(226, 156, 240);
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(145, 24, 119);
+}
