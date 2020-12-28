@@ -3,8 +3,8 @@
 // counter for L
 let totalL = 0;
 const elL = document.querySelector("#countL");
-const pressedL = (e) => {
-  if (e.keyCode == 76) {
+const pressedL = (event) => {
+  if (event.keyCode == 76) {
     totalL++;
     elL.innerHTML = totalL;
   }
@@ -16,8 +16,8 @@ function counterL() {
 
 let totalS = 0;
 const elS = document.querySelector("#countS");
-const pressedS = (e) => {
-  if (e.keyCode == 83) {
+const pressedS = (event) => {
+  if (event.keyCode == 83) {
     totalS++;
     elS.innerHTML = totalS;
   }
