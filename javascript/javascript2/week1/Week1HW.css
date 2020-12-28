@@ -1,0 +1,12 @@
+body {
+  background-color: lightgray;
+  display: block;
+}
+.Tasks {
+  border: solid 0.1mm gray;
+  padding-left: 2em;
+  margin: 2em;
+}
+.headlines {
+  color: rgb(68, 67, 67);
+}
