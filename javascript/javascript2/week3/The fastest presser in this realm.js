@@ -3,7 +3,7 @@
 // counter for L
 let totalL = 0;
 const elL = document.querySelector("#countL");
-const pressedL = (e) => {
+const pressedL = (event) => {
   if (e.keyCode == 76) {
     totalL++;
     elL.innerHTML = totalL;
