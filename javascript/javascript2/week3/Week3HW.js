@@ -35,7 +35,7 @@ delayFunc(5, "This string logged out after 5 seconds");
 // document.getElementById("Delay-button").addEventListener("click", delayer);
 
 // Second way is by using ananymous function and calling the function inside
-document.getElementById("Delay-button").addEventListener("click", () => {
+document.querySelector("#delay-button").addEventListener("click", () => {
   delayFunc(5, "This string logged out after 5 seconds");
 });
 
