@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(207, 242, 245);
+}
+.gameBorder {
+  text-align: center;
+  justify-content: center;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  margin: 100px 0px 0px 500px;
+}
+h1 {
+  font-size: 3em;
+  font-family: cursive;
+  color: rgb(64, 130, 228);
+}
+.btnInput {
+  display: flex;
+  flex-direction: column;
+}
+#timeButton {
+  width: 140px;
+  height: 60px;
+  margin: 10px 0px 0px 180px;
+  border-radius: 3%;
+  border-color: rgb(207, 242, 245);
+  background-color: rgb(138, 181, 245);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+#playTimeSet {
+  width: 250px;
+  height: 30px;
+  margin: 0px 0px 0px 180px;
+  margin-left: 120px;
+  padding-left: 10px;
+  border-color: rgba(207, 242, 245, 0);
+}
+.counters {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px 0px 40px;
+  border-top: black solid 0.05em;
+  /* background-color: blue; */
+  font: 1.5em sans-serif;
+  color: rgb(24, 73, 46);
+}
+.countL {
+  padding: 70px 69px 15px 69px;
+  border-right: black solid 0.05em;
+}
+.countS {
+  width: 100px;
+  height: 300px;
+  padding: 70px 69px 15px 69px;
+}
