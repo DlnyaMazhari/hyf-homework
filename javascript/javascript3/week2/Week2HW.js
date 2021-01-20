@@ -17,7 +17,7 @@ fetch(url)
 
 //Promise that resolves after set time
 
-function promise(resolveAfter) {
+function wait(resolveAfter) {
   return new Promise((resolve) => {
     const delay = resolveAfter * 1000;
     setTimeout(() => {
@@ -28,7 +28,7 @@ function promise(resolveAfter) {
 
 async function result() {
   console.log("kindly wait");
-  const result = await promise(4);
+  await wait(4);
   console.log("Here you are");
 }
 
