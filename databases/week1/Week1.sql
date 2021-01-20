@@ -90,34 +90,60 @@ insert into task (id, title, description, created, updated, due_date, status_id,
 -- 1
 SELECT count(*) AS total_tasks FROM task;
 
+-- total_tasks 35
+
 -- 2
 SELECT count(*) AS total FROM task
 WHERE due_date IS null;
+
+-- total 8
+
 -- 3
 SELECT * FROM task
 WHERE status_id=3;
+
+-- I couldn't copy paste the answer as its a table, but 12 users where filtered as a result
 
 -- 4
 SELECT * FROM task
 WHERE status_id !=3;
 
+-- I couldn't copy paste the answer as its a table, but 23 users where filtered as a result
+
 -- 5
 SELECT * FROM task
 ORDER BY created DESC;
+
+-- I couldn't copy the whole table but the first row in created was ( '25', 'Look at apartments in Ørestad', '2 or 3 rooms',
+-- '2017-10-30 09:47:00', '2017-10-19 06:11:26', NULL, '1', '6')
+
 
 -- 6
 SELECT * FROM task
 ORDER BY created DESC
 LIMIT 1;
 
+-- '25', 'Look at apartments in Ørestad', '2 or 3 rooms', '2017-10-30 09:47:00', '2017-10-19 06:11:26', NULL, '1', '6'
+
+
 -- 7
 SELECT title, due_date FROM task
 WHERE title LIKE '%database%' OR description LIKE '%database%';
+
+-- 'Setup salary databases for accounting', '2017-12-05 00:19:08'
+-- 'Learn how databases work', '2017-12-18 05:08:05'
+-- 'Make the databases perform better', '2017-12-01 13:28:35'
+-- 'Backup databases to external disk', '2017-12-23 14:21:01'
+-- 'Learn about NoSQL databases', '2017-12-23 10:13:42'
+
 
 -- 8
 SELECT task.title, status.name AS text
 FROM task 
 INNER JOIN status ON task.status_id=status.id;
+
+-- first row ('Order groceries online', 'Not started')
+-- last row ('Hang up paintings in living room', 'Done')
 
 -- 9
 SELECT status.name, count(*) AS total
@@ -125,9 +151,18 @@ FROM status
 JOIN task ON task.status_id=status.id
 GROUP BY status.name;
 
+-- 'Not started', '8'
+-- 'In progress', '15'
+-- 'Done', '12'
+
+
 -- 10
 SELECT status.name , count(*) AS total
 FROM status
 JOIN task ON task.status_id=status.id
 GROUP BY status.name
 ORDER BY total DESC;
+
+--  'In progress', '15'
+-- 'Done', '12'
+-- 'Not started', '8'
