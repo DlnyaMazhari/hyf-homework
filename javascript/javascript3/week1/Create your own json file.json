@@ -1,0 +1,36 @@
+[
+    {
+        "destination":"caucasian republic",
+        "id": 1,
+        "reason of visit":[
+            "mountains",
+            "ancient cultur"
+        ]
+    },
+    {
+        "destination":"egypt",
+        "id":2,
+        "reason of visit":[
+            "pyramids",
+            "old bazars",
+            "old status"
+        ]
+    },
+    {
+        "destination":"greece",
+        "id":3,
+        "reason of visit":[
+            "ancient cultur",
+            "ancient places",
+            "beautiful tourist places"
+        ]
+    },
+    {
+        "destination":"cuba",
+        "id": 4,
+        "reason of visit":[
+            "che guevara",
+            "culture"
+        ]
+    }
+]
