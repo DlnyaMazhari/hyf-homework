@@ -18,4 +18,4 @@ const circle = new Circle(10);
 const diameter = circle.getDiameter();
 const circumference = circle.getCircumference();
 const area = circle.getArea();
-console.log(diameter, circumference, area);
+console.log({ diameter: diameter, circumference: circumference, area: area });
