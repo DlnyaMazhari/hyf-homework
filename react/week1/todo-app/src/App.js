@@ -18,11 +18,7 @@ const TodoList = [
 ];
 
 function App() {
-  return (
-    <div>
-      <Activities TodoList={TodoList} />
-    </div>
-  );
+  return <Activities TodoList={TodoList} />;
 }
 
 export default App;

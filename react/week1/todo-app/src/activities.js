@@ -1,22 +1,16 @@
 import React from "react";
 
 function HeaderTitle() {
-  return (
-    <>
-      <h1>Todo list</h1>
-    </>
-  );
+  return <h1>Todo list</h1>;
 }
 
 function ListItems(props) {
   return (
-    <>
-      <ol>
-        <li>
-          {props.task},{props.deadlineDate}
-        </li>
-      </ol>
-    </>
+    <ol>
+      <li>
+        {props.task},{props.deadlineDate}
+      </li>
+    </ol>
   );
 }
 
