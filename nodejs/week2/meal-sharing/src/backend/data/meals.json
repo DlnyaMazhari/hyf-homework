@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2019/12/7 14:34",
+        "price" : 67
+    },
+     {
+        "id" : 2,
+        "title" : "Friends pizza hangout",
+        "maxNumberOfGuests" : 2,
+        "description" : "A friendly evening and enjoying pizza",
+        "createdAt" : "2021/02/02 18:25",
+        "price" : 70
+    },
+    {
+        "id" : 3,
+        "title" : "Breakfast with co-workers",
+        "maxNumberOfGuests" : 10,
+        "description" : "A break from office official chats",
+        "createdAt" : "2021/02/03 13:58",
+        "price" : 100
+    }
+]
